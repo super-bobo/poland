@@ -45,7 +45,7 @@ function submit_validator(){
 		},
 	})
 	.done(function(res) {
-		console.log("success");
+		
 	})
 	.fail(function() {
 		console.log("error");
