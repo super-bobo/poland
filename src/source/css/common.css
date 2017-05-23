@@ -11,6 +11,9 @@ ul {
 .fr {
   float: right;
 }
+.font-normal {
+  font-weight: normal;
+}
 /*header start*/
 .btn-default-self {
   border-color: #d1281b;

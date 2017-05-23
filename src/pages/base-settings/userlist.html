@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<title>homepage</title>
+	<link href="../../source/plugins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../source/css/common.css" rel="stylesheet">
+	<link href="../../source/css/right.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="../../source/plugins/lib/js/html5.min.js"></script>
+	<script src="../../source/plugins/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="header">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					<div class="logo">
+						<a href="http://www.dahuasecurity.com/en/us/" title="dahua security">
+							<img src="../../source/images/LOGO.png" alt="dahua logo">
+						</a>
+					</div>
+
+
+					<div class="contact-info">
+						<strong class="welcome-text">Welcome to Dahua!</strong>
+						<span>wanghongbo</span>(<span>50426</span>)
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="fr">
+						<a href="#" class="btn btn-default btn-default-self">sign out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<div class="nav">
+	<nav class="navbar navbar-default navbar-default-self">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		
+		
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expanded="false">
+							Home
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Orders <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Express Order</a></li>
+							<li><a href="#">Pending Order</a></li>
+							<li><a href="#">Approving Order</a></li>
+							<li><a href="#">Unconfirm Orders</a></li>
+							<li><a href="#">Order history</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Order history
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Account <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Account Information</a></li>
+							<li><a href="#">Change Password</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<div class="content-box container-fluid">
+	<div class="row">
+		<aside class="col-lg-2 col-md-3 visible-lg visible-md">
+			<div class="sidebar">
+				<h5>Base settings</h5>
+				<ul>
+					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>User list</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Menu role</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Ceche management</a></li>
+				</ul>
+			</div>
+		</aside>
+		<section class="col-lg-10 col-md-9">
+			<div class="content-right">
+				<div class="container-fluid">
+					<ol class="breadcrumb breadcrumb-self">
+						<li><a href="#">Base settings</a></li>
+						<li class="active">User list</li>
+					</ol>
+					<section class="con-part">
+						<div class="con-tit clearfix">
+							<h4 class="fl">Search Condition</h4>
+							<div class="add-btn fr">
+								<button class="btn btn-primary btn-primary-self" data-toggle="modal" data-target="#addNewUser">Add</button>
+							</div>
+						</div>
+						<div class="searchbar">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label font-normal">User ID or Name</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" placeholder="Customer Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label font-normal">Role</label>
+									<div class="col-sm-5">
+										<select class="form-control">
+					                        <option value="">Select</option>
+		                                    <option value="101">Super Administrator</option>
+		                                    <option value="102">Sales Assistant</option>
+		                                    <option value="103">Branch Administrator</option>
+		                                    <option value="104">Product Manager</option>
+		                                    <option value="105">Sales</option>
+		                                    <option value="106">Sales Assistant1</option>
+		                                    <option value="107">Approver</option>
+					                    </select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label font-normal">Statue</label>
+									<div class="col-sm-6">
+										<label class="radio-inline">
+											<input type="radio" name="statue" checked>Active
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="statue">InActive
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="statue">All
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-9">
+										<button class="btn btn-primary btn-primary-self">Search</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</section>
+					<section class="con-part">
+						<div class="table-conbox table-responsive">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th><input type="checkbox"></th>
+										<th>Operation</th>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Role</th>                    
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>
+											<a href="#">Modify</a> | <a href="#">InActive</a>
+										</td>
+										<td>302564</td>
+										<td>lili</td>
+										<td>Approver</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>
+											<a href="#">Modify</a> | <a href="#">InActive</a>
+										</td>
+										<td>302564</td>
+										<td>lili</td>
+										<td>Approver</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>
+											<a href="#">Modify</a> | <a href="#">InActive</a>
+										</td>
+										<td>302564</td>
+										<td>lili</td>
+										<td><div>Approver</div><div>Approver</div></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="page-box clearfix">
+								<p class="fl page-con">Page: 1 / 2 Total:14</p>
+								<nav class="fr" aria-label="page navigetion">
+									<ul class="pagination">
+										<li>
+											<a href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+										</li>
+										<li class="active">
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											<a href="#">4</a>
+										</li>
+										<li>
+											<a href="#">5</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<div class="footer">
+	<footer>
+		<div class="copyright">
+			<section>
+				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Dahua Technology USA Inc. 23 Hubble, Irvine, CA 92618, USA
+			</section>
+			<section>
+				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Tel:  (949) 679-7777
+			</section>
+		</div>
+	</footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addNewUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add New User</h4>
+      </div>
+      <div class="modal-body">
+      	<form class="form-horizontal">
+      		<div class="form-group">
+      			<label for="" class="col-sm-4 control-label font-normal">User Account Code*</label>
+      			<div class="col-sm-6">
+      				<input type="text" class="form-control" placeholder="User Account Code">
+      			</div>
+      		</div>
+      		<div class="form-group">
+      			<label for="" class="col-sm-4 control-label font-normal">User Name*</label>
+      			<div class="col-sm-6">
+      				<input type="text" class="form-control" placeholder="User Name">
+      			</div>
+      		</div>
+      		<div class="form-group">
+      			<label for="" class="col-sm-4 control-label font-normal">User Email*</label>
+      			<div class="col-sm-6">
+      				<input type="text" class="form-control" placeholder="User Email">
+      			</div>
+      		</div>
+      		<div class="form-group">
+      			<label for="" class="col-sm-4 control-label font-normal">User Roles</label>
+      			<div class="col-sm-8">
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Super Administrator
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Sales Assistant
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Branch Administrator
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Product Manager
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Sales
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Sales Assistant1
+      				</label>
+      				<label class="checkbox-inline">
+      					<input type="checkbox" name="roles">Approver
+      				</label>
+      			</div>
+      		</div>
+      		<div class="form-group">
+      			<label for="" class="col-sm-4 control-label font-normal">Statue</label>
+      			<div class="col-sm-8">
+      				<label class="radio-inline">
+      					<input type="radio" name="selectone" checked>Select One*
+      				</label>
+      				<label class="radio-inline">
+      					<input type="radio" name="selectone">Enable
+      				</label>
+      			</div>
+      		</div>
+
+      	</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-primary-self">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../source/plugins/lib/jquery-1.12.4.min.js"></script>
+<script src="../../source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../../source/plugins/lib/jquery-placeholder.min.js"></script>
+<script>
+	$(function(){
+		$("input,textarea").placeholder();
+	})
+</script>
+</body>
+</html>
