@@ -1,0 +1,47 @@
+// LESS Document 
+@theme-color: #d1281b;
+@theme-color-hover: #ba1f1f;
+
+//content-left start
+.content-box{
+	position: relative;
+	margin-bottom: 60px;
+	aside{
+
+		h5{
+			margin-top:0;
+			padding-left: 12px;
+			font-weight: bold;
+		}
+		ul{
+			padding-bottom: 6px;
+			border-bottom: 1px solid #ddd;
+			li{
+				a{
+					display: block;
+					line-height: 24px;
+					padding-left: 12px;
+					color: #333;
+					span{
+						visibility:hidden;
+						font-size: 10px;
+						margin-right: 6px;
+					}
+					&.active{
+						color: @theme-color;
+						font-weight: bold;
+						
+					}
+					&:hover{
+						text-decoration: none;
+						color: @theme-color;
+						span{
+							visibility:visible;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//content-left end

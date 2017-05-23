@@ -1,0 +1,181 @@
+/*content-right start*/
+.content-box .content-right {
+  margin-left: 200px;
+  margin-bottom: 32px;
+}
+.content-box .content-right .con-part {
+  margin-bottom: 20px;
+}
+.content-box .content-right .breadcrumb-self {
+  margin-bottom: 16px;
+}
+.content-box .content-right .breadcrumb-self a {
+  color: #333;
+}
+.content-box .content-right button.close-btn {
+  color: #d1281b;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.content-box .content-right button.close-btn:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.content-box .content-right .con-tit {
+  padding-left: 12px;
+}
+.content-box .content-right .searchbar {
+  padding: 24px 32px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-top: 12px;
+}
+.content-box .content-right .searchbar label {
+  font-weight: normal;
+}
+.content-box .content-right .table-conbox {
+  border: solid 1px #ddd;
+  border-radius: 3px;
+}
+.content-box .content-right .table-conbox .table {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.content-box .content-right .table-conbox .table-label {
+  padding-right: 0;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.content-box .content-right .table-conbox td,
+.content-box .content-right .table-conbox th {
+  text-align: center;
+  vertical-align: middle;
+}
+.content-box .content-right .table-conbox td.align-left,
+.content-box .content-right .table-conbox th.align-left,
+.content-box .content-right .table-conbox td .align-left,
+.content-box .content-right .table-conbox th .align-left {
+  text-align: left;
+}
+.content-box .content-right .table-conbox td.align-right,
+.content-box .content-right .table-conbox th.align-right,
+.content-box .content-right .table-conbox td .align-right,
+.content-box .content-right .table-conbox th .align-right {
+  text-align: right;
+}
+.content-box .content-right .table-conbox td a,
+.content-box .content-right .table-conbox th a {
+  color: #d1281b;
+}
+.content-box .content-right .table-conbox td .small-input,
+.content-box .content-right .table-conbox th .small-input {
+  margin-top: 2px;
+}
+.content-box .content-right .table-conbox td .label-line .checkbox-inline,
+.content-box .content-right .table-conbox th .label-line .checkbox-inline {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.content-box .content-right .table-conbox .sub-table td {
+  padding: 6px 0;
+}
+.content-box .content-right .table-conbox .table-total-mount {
+  border-top: solid 2px #666;
+  padding: 12px 20px;
+  font-size: 13px;
+  text-align: right;
+}
+.content-box .content-right .table-conbox .table-total-mount a {
+  color: #d1281b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.content-box .content-right .table-conbox .table-total-mount a:hover {
+  color: #ba1f1f;
+}
+.content-box .content-right .table-conbox .table-total-mount .totalmore {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #d1281b;
+  font-weight: bold;
+}
+.content-box .content-right .table-conbox .formlist {
+  margin-left: 42px;
+  padding-top: 10px;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+}
+.content-box .content-right .table-conbox .formlist:first-child {
+  border-top: none;
+}
+.content-box .content-right .table-conbox .formlist input[type='radio'] {
+  margin-top: 2px;
+}
+.content-box .content-right .table-conbox .formlist .operation {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 16px;
+  padding-top: 7px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.content-box .content-right .table-conbox .formlist .operation li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.content-box .content-right .table-conbox .formlist .operation li a {
+  color: #d1281b;
+}
+.content-box .content-right .table-conbox .formlist .operation li a:hover {
+  color: #ba1f1f;
+}
+.content-box .content-right .table-conbox .formlist .sublist {
+  margin: 24px 0;
+}
+.content-box .content-right .table-conbox .formlist .sublist .form-group-margin {
+  margin-bottom: 6px;
+}
+.content-box .content-right .table-conbox .formlist .sublist .add-btn {
+  margin-left: 32px;
+}
+.content-box .content-right .table-conbox .formlist .sublist .operation {
+  display: none;
+}
+.content-box .content-right .table-conbox .formlist .sublist .hover-show {
+  margin-left: 15px;
+  display: inline-block;
+}
+.content-box .content-right .table-conbox .formlist .sublist .hover-show:hover .operation {
+  display: inline-block;
+}
+.content-box .content-right .table-conbox .formlist .spe-sublist {
+  margin-left: 42px;
+  padding-left: 12px;
+  position: relative;
+}
+.content-box .content-right .table-conbox .formlist .spe-sublist:before {
+  content: "";
+  width: 2px;
+  height: 24px;
+  display: block;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.content-box .content-right .table-conbox .formlist .method-tit {
+  color: #555;
+  font-weight: bold;
+}
+.content-box .content-right .page-box {
+  padding: 0 12px;
+}
+.content-box .content-right .page-box .page-con {
+  margin: 20px 0;
+  line-height: 36px;
+}
+.content-box .content-right .boxend {
+  margin-top: 12px;
+}
+/*content-right end*/

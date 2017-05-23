@@ -1,0 +1,35 @@
+.content-box {
+  position: relative;
+  margin-bottom: 60px;
+}
+.content-box aside h5 {
+  margin-top: 0;
+  padding-left: 12px;
+  font-weight: bold;
+}
+.content-box aside ul {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+.content-box aside ul li a {
+  display: block;
+  line-height: 24px;
+  padding-left: 12px;
+  color: #333;
+}
+.content-box aside ul li a span {
+  visibility: hidden;
+  font-size: 10px;
+  margin-right: 6px;
+}
+.content-box aside ul li a.active {
+  color: #d1281b;
+  font-weight: bold;
+}
+.content-box aside ul li a:hover {
+  text-decoration: none;
+  color: #d1281b;
+}
+.content-box aside ul li a:hover span {
+  visibility: visible;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<title>login</title>
+	<link href="./source/plugins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./source/css/layer.css" rel="stylesheet">
+	<link href="./source/css/login.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="./source/plugins/lib/js/html5.min.js"></script>
+	<script src="./source/plugins/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="header">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					<div class="logo">
+						<a href="http://www.dahuasecurity.com/en/us/" title="dahua security">
+							<img src="./source/images/LOGO.png" alt="dahua logo">
+						</a>
+					</div>
+
+
+					<div class="contact-info">
+						<strong class="welcome-text">Welcome to Dahua Technology Poland!</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<section class="login-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<section class="col-sm-6">
+				<div class="login-banner">
+					<img src="./source/images/login-banner.png">
+				</div>
+			</section>
+			<section class="col-sm-6">
+				<div class="login-box">
+					<form>
+						<div class="form-group has-feedback">
+							<label for="username">USER NAME</label>
+							<input type="email" class="form-control" id="username" name="username" placeholder="User name" onchange="login_validator(this, 'User name can not be empty!')">
+						</div>
+						<div class="form-group has-feedback">
+							<label for="password">PASSWORD</label>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" onchange="login_validator(this, 'Password can not be empty!')">
+						</div>
+						<div class="form-group has-feedback">
+							<label for="vercode">Verification Code</label>
+							<div class="input-group">
+								<span class="input-group-addon" style="padding: 0"><img src="./source/images/codeimg.png"></span>
+								<input type="text" class="form-control" id="vercode" name="vercode" onchange="login_validator(this, 'Verification Code can not be empty!')">
+							</div>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember Me
+							</label>
+						</div>
+						<button type="button" class="btn btn-block btn-primary btn-primary-self" onclick="submit_validator()">Sign in</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+<section class="footer">
+	<footer>
+		<div class="copyright">
+			<section>
+				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Dahua Technology USA Inc. 23 Hubble, Irvine, CA 92618, USA
+			</section>
+			<section>
+				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Tel:  (949) 679-7777
+			</section>
+		</div>
+	</footer>
+</section>
+<script src="./source/plugins/lib/jquery-1.12.4.min.js"></script>
+<script src="./source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./source/plugins/lib/jquery-placeholder.min.js"></script>
+<script src="./source/js/login.js"></script>
+<script>
+	$(function(){
+		$("input,textarea").placeholder();
+	})
+</script>
+</body>
+</html>
