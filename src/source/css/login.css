@@ -109,11 +109,14 @@ ul {
   width: 100%;
   margin: 60px auto;
 }
+.login-content {
+  max-width: 960px;
+}
 .login-banner {
   text-align: right;
 }
 .login-box {
-  width: 300px;
+  width: 360px;
   padding: 32px 24px;
   border: solid 1px #d1281b;
 }

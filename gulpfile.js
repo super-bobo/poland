@@ -11,9 +11,9 @@ var gulp = require('gulp'),
       
 //less 转css
 gulp.task('less', function(){
-		gulp.src('src/themes/less/*.less')
+		gulp.src('src/source/less/*.less')
 		.pipe(less())
-		.pipe(gulp.dest('src/themes/css'));
+		.pipe(gulp.dest('src/source/css'));
 })
 
 //监听less变动

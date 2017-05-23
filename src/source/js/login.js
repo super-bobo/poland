@@ -8,7 +8,6 @@ function login_validator(currentNode, text, errorStatus){
 	 	tipNode = $('<small class="help-block"></small>'),
 	 	currentVal = $(currentNode).val(),
 	 	parentNode = $(currentNode).parent('').hasClass('form-group')? $(currentNode).parent('.form-group') : $(currentNode).parents('.form-group');
-	console.log(parentNode);
 	if(currentVal == "" || errorStatus){
 		tipNode.text(text);
 		parentNode.addClass('has-error');
@@ -16,17 +15,22 @@ function login_validator(currentNode, text, errorStatus){
 			iconNode.appendTo(parentNode);
 			tipNode.appendTo(parentNode);
 		}
+		return false;
 	}else{
 		parentNode.removeClass('has-error');
 		parentNode.find('i, small').remove();
+		return true;
 	}
 }
 
 //点击提交按钮事件
 function submit_validator(){
-	login_validator('#username', 'User name can not be empty!');
-	login_validator('#password', 'Password name can not be empty!');
-	login_validator('#vercode', 'Verification Code name can not be empty!');
+	var validator1 = login_validator('#username', 'User name can not be empty!'),
+		validator2 = login_validator('#password', 'Password name can not be empty!'),
+		validator3 = login_validator('#vercode', 'Verification Code name can not be empty!');
+	if(!validator1 || !validator2 || !validator3){
+		return false;
+	}
 	var usernameVal = $('#username').val(),
 		passwordVal = $('#password').val(),
 		vercodeVal = $('#vercode').val();
