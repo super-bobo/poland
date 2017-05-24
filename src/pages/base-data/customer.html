@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<title>User list</title>
+	<title>customer</title>
 	<link href="../../source/plugins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../source/css/common.css" rel="stylesheet">
 	<link href="../../source/css/base-right.css" rel="stylesheet">
@@ -98,7 +98,7 @@
 			<div class="sidebar">
 				<h5>Base settings</h5>
 				<ul>
-					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>User list</a></li>
+					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>Customer</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Menu role</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Ceche management</a></li>
 				</ul>
@@ -108,51 +108,22 @@
 			<div class="content-right">
 				<div class="container-fluid">
 					<ol class="breadcrumb breadcrumb-self">
-						<li><a href="#">Base settings</a></li>
-						<li class="active">User list</li>
+						<li><a href="#">Base Data</a></li>
+						<li class="active">Customer</li>
 					</ol>
 					<section class="con-toppart">
 						<div class="con-title clearfix">
-							<h4 class="fl">Search Condition</h4>
+							<h4 class="fl">Customer List</h4>
 							<div class="add-btn fr">
-								<button class="btn btn-primary input-sm btn-primary-self" data-toggle="modal" data-target="#addNewData">Add</button>
+								<a href="#" class="btn btn-primary input-sm btn-primary-self">Add</a>
 							</div>
 						</div>
 						<div class="searchbar">
 							<form class="form-horizontal">
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">User ID or Name</label>
+									<label for="" class="col-sm-3 control-label">Customer Name</label>
 									<div class="col-sm-5">
 										<input type="text" class="form-control" placeholder="Customer Name">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">Role</label>
-									<div class="col-sm-5">
-										<select class="form-control">
-					                        <option value="">Select</option>
-		                                    <option value="101">Super Administrator</option>
-		                                    <option value="102">Sales Assistant</option>
-		                                    <option value="103">Branch Administrator</option>
-		                                    <option value="104">Product Manager</option>
-		                                    <option value="105">Sales</option>
-		                                    <option value="106">Sales Assistant1</option>
-		                                    <option value="107">Approver</option>
-					                    </select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">Statue</label>
-									<div class="col-sm-6">
-										<label class="radio-inline">
-											<input type="radio" name="statue" checked>Active
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="statue">InActive
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="statue">All
-										</label>
 									</div>
 								</div>
 								<div class="form-group">
@@ -165,43 +136,45 @@
 					</section>
 					<section class="con-part">
 						<div class="table-conbox table-responsive">
-							<table class="table table-striped table-hover">
+							<table class="table table-striped table-hover check-all-sub">
 								<thead>
 									<tr>
-										<th><input type="checkbox"></th>
-										<th>Operation</th>
-										<th>ID</th>
+										<th>Details</th>
 										<th>Name</th>
-										<th>Role</th>                    
+										<th>ID.</th>
+										<th>Status</th>                    
+										<th>Language</th>
+										<th>Country</th>
+										<th>Sales Region</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td>Approver</td>
+										<td><a >Details</a></td>
+										<td>ABC Inc.</td>
+										<td>1-HEHBS</td>
+										<td>Active</td>
+										<td>PL</td>     
+										<td>Poland</td>     
+										<td>CEE</td>     
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td>Approver</td>
+										<td><span >Details</span></td>
+										<td>ABC Inc.</td>
+										<td>1-HEHBS</td>
+										<td>Active</td>
+										<td>PL</td>     
+										<td>Poland</td>     
+										<td>CEE</td>     
 									</tr>
 									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td><div>Approver</div><div>Approver</div></td>
+										<td><span >Details</span></td>
+										<td>ABC Inc.</td>
+										<td>1-HEHBS</td>
+										<td>Active</td>
+										<td>PL</td>     
+										<td>Poland</td>     
+										<td>CEE</td>     
 									</tr>
 								</tbody>
 							</table>
@@ -255,81 +228,6 @@
 			</section>
 		</div>
 	</footer>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="addNewData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add New User</h4>
-      </div>
-      <div class="modal-body">
-      	<form class="form-horizontal">
-      		<div class="form-group">
-      			<label for="" class="col-sm-4 control-label font-normal">User Account Code*</label>
-      			<div class="col-sm-6">
-      				<input type="text" class="form-control" placeholder="User Account Code">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<label for="" class="col-sm-4 control-label font-normal">User Name*</label>
-      			<div class="col-sm-6">
-      				<input type="text" class="form-control" placeholder="User Name">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<label for="" class="col-sm-4 control-label font-normal">User Email*</label>
-      			<div class="col-sm-6">
-      				<input type="text" class="form-control" placeholder="User Email">
-      			</div>
-      		</div>
-      		<div class="form-group label-line-self">
-      			<label for="" class="col-sm-4 control-label font-normal">User Roles</label>
-      			<div class="col-sm-8">
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Super Administrator
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Sales Assistant
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Branch Administrator
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Product Manager
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Sales
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Sales Assistant1
-      				</label>
-      				<label class="checkbox-inline">
-      					<input type="checkbox" name="roles">Approver
-      				</label>
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<label for="" class="col-sm-4 control-label font-normal">Select One*</label>
-      			<div class="col-sm-8">
-      				<label class="radio-inline">
-      					<input type="radio" name="selectone" checked>Disabled
-      				</label>
-      				<label class="radio-inline">
-      					<input type="radio" name="selectone">Enable
-      				</label>
-      			</div>
-      		</div>
-
-      	</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-primary-self">Save</button>
-      </div>
-    </div>
-  </div>
 </div>
 <script src="../../source/plugins/lib/jquery-1.12.4.min.js"></script>
 <script src="../../source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>

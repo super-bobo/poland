@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<title>User list</title>
+	<title>Menu role</title>
 	<link href="../../source/plugins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../source/css/common.css" rel="stylesheet">
 	<link href="../../source/css/base-right.css" rel="stylesheet">
@@ -98,8 +98,8 @@
 			<div class="sidebar">
 				<h5>Base settings</h5>
 				<ul>
-					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>User list</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Menu role</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>User list</a></li>
+					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>Menu role</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Ceche management</a></li>
 				</ul>
 			</div>
@@ -109,136 +109,160 @@
 				<div class="container-fluid">
 					<ol class="breadcrumb breadcrumb-self">
 						<li><a href="#">Base settings</a></li>
-						<li class="active">User list</li>
+						<li class="active">Menu role</li>
 					</ol>
 					<section class="con-toppart">
 						<div class="con-title clearfix">
-							<h4 class="fl">Search Condition</h4>
 							<div class="add-btn fr">
-								<button class="btn btn-primary input-sm btn-primary-self" data-toggle="modal" data-target="#addNewData">Add</button>
+								<button class="btn btn-primary input-sm btn-primary-self">Save</button>
 							</div>
-						</div>
-						<div class="searchbar">
-							<form class="form-horizontal">
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">User ID or Name</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" placeholder="Customer Name">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">Role</label>
-									<div class="col-sm-5">
-										<select class="form-control">
-					                        <option value="">Select</option>
-		                                    <option value="101">Super Administrator</option>
-		                                    <option value="102">Sales Assistant</option>
-		                                    <option value="103">Branch Administrator</option>
-		                                    <option value="104">Product Manager</option>
-		                                    <option value="105">Sales</option>
-		                                    <option value="106">Sales Assistant1</option>
-		                                    <option value="107">Approver</option>
-					                    </select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label font-normal">Statue</label>
-									<div class="col-sm-6">
-										<label class="radio-inline">
-											<input type="radio" name="statue" checked>Active
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="statue">InActive
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="statue">All
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<button class="btn btn-primary btn-primary-self">Search</button>
-									</div>
-								</div>
-							</form>
 						</div>
 					</section>
 					<section class="con-part">
-						<div class="table-conbox table-responsive">
-							<table class="table table-striped table-hover">
-								<thead>
-									<tr>
-										<th><input type="checkbox"></th>
-										<th>Operation</th>
-										<th>ID</th>
-										<th>Name</th>
-										<th>Role</th>                    
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td>Approver</td>
-									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td>Approver</td>
-									</tr>
-									<tr>
-										<td><input type="checkbox"></td>
-										<td>
-											<a href="#">Modify</a> | <a href="#">InActive</a>
-										</td>
-										<td>302564</td>
-										<td>lili</td>
-										<td><div>Approver</div><div>Approver</div></td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="page-box clearfix">
-								<p class="fl page-con">Page: 1 / 2 Total:14</p>
-								<nav class="fr" aria-label="page navigetion">
-									<ul class="pagination">
-										<li>
-											<a href="#" aria-label="Previous">
-												<span aria-hidden="true">&laquo;</span>
-											</a>
-										</li>
-										<li class="active">
-											<a href="#">1</a>
-										</li>
-										<li>
-											<a href="#">2</a>
-										</li>
-										<li>
-											<a href="#">3</a>
-										</li>
-										<li>
-											<a href="#">4</a>
-										</li>
-										<li>
-											<a href="#">5</a>
-										</li>
-										<li>
-											<a href="#" aria-label="Next">
-												<span aria-hidden="true">&raquo;</span>
-											</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</section>
+				<div class="table-conbox table-responsive">
+					<table class="table table-striped check-all-sub">
+						<thead>
+							<tr>
+								<th width="16%">Menu</th>
+								<th>Role</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="2">Order Management</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<table class="sub-table" width="100%">
+										<tr>
+											<td width="16%">Inventory List</td>
+											<td class="align-left">
+												<div class="form-group label-line-self">
+													<div class="col-sm-12">
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td width="16%">Inventory List</td>
+											<td class="align-left">
+												<div class="form-group label-line">
+													<div class="col-sm-12">
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">Order Management</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<table class="sub-table" width="100%">
+										<tr>
+											<td width="16%">Inventory List</td>
+											<td class="align-left">
+												<div class="form-group label-line">
+													<div class="col-sm-12">
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td width="16%">Inventory List</td>
+											<td class="align-left">
+												<div class="form-group label-line">
+													<div class="col-sm-12">
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">Active
+														</label>
+														<label class="checkbox-inline">
+															<input class="small-input" type="checkbox" name="statue">InActive
+														</label>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="con-tit boxend clearfix">
+					<div class="add-btn fr">
+						<button class="btn btn-primary input-sm btn-primary-self">Save</button>
+					</div>
+				</div>
+			</section>
 				</div>
 			</div>
 		</section>
