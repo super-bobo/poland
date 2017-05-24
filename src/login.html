@@ -37,27 +37,27 @@
 <section class="login-wrapper">
 	<div class="container login-content">
 		<div class="row">
-			<section class="col-sm-6">
+			<section class="col-md-6 visible-lg visible-md">
 				<div class="login-banner">
 					<img src="./source/images/login-banner.png">
 				</div>
 			</section>
-			<section class="col-sm-6">
+			<section class="col-md-6 col-sm-12">
 				<div class="login-box">
 					<form>
 						<div class="form-group has-feedback">
 							<label for="username">USER NAME</label>
-							<input type="email" class="form-control" id="username" name="username" placeholder="User name" onchange="login_validator(this, 'User name can not be empty!')">
+							<input type="email" class="form-control" id="username" name="username" placeholder="User name" onchange="login_validator(this, 'User name can not be empty!')" onfocus="focus_validator(this)">
 						</div>
 						<div class="form-group has-feedback">
 							<label for="password">PASSWORD</label>
-							<input type="password" class="form-control" id="password" name="password" placeholder="Password" onchange="login_validator(this, 'Password can not be empty!')">
+							<input type="password" class="form-control" id="password" name="password" placeholder="Password" onchange="login_validator(this, 'Password can not be empty!')" onfocus="focus_validator(this)">
 						</div>
 						<div class="form-group has-feedback">
 							<label for="vercode">Verification Code</label>
 							<div class="input-group">
 								<span class="input-group-addon" style="padding: 0"><img src="./source/images/codeimg.png"></span>
-								<input type="text" class="form-control" id="vercode" name="vercode" onchange="login_validator(this, 'Verification Code can not be empty!')">
+								<input type="text" class="form-control" id="vercode" name="vercode" onchange="login_validator(this, 'Verification Code can not be empty!')" onfocus="focus_validator(this)">
 							</div>
 						</div>
 						<div class="checkbox">

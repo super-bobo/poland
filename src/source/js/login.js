@@ -23,6 +23,12 @@ function login_validator(currentNode, text, errorStatus){
 	}
 }
 
+function focus_validator(currentNode){
+	var parentNode = $(currentNode).parent('').hasClass('form-group')? $(currentNode).parent('.form-group') : $(currentNode).parents('.form-group');
+	parentNode.removeClass('has-error');
+	parentNode.find('i, small').remove();
+}
+
 //点击提交按钮事件
 function submit_validator(){
 	var validator1 = login_validator('#username', 'User name can not be empty!'),

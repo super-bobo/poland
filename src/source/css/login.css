@@ -116,11 +116,13 @@ ul {
   max-width: 960px;
 }
 .login-banner {
-  text-align: right;
+  text-align: center;
 }
 .login-box {
   width: 360px;
   padding: 32px 24px;
+  margin-left: auto;
+  margin-right: auto;
   border: solid 1px #d1281b;
 }
 /*footer start*/
