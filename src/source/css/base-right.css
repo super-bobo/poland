@@ -179,4 +179,10 @@
   margin-left: 0;
   margin-right: 10px;
 }
+.menu-maintenance .ztreeBox {
+  display: inline-block;
+}
+.menu-maintenance .menu-maintenance-right {
+  margin-top: 12px;
+}
 /*content-right end*/
