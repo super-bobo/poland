@@ -22,6 +22,7 @@
 }
 .content-right .con-title {
   padding-left: 12px;
+  margin-bottom: 10px;
 }
 .content-right .con-title h4 {
   padding: 0;
@@ -32,7 +33,6 @@
   padding: 20px 32px 6px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  margin-top: 10px;
 }
 .content-right .table-conbox {
   border: solid 1px #ddd;
