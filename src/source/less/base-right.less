@@ -41,141 +41,141 @@
 		border: 1px solid #ddd;
 		border-radius: 3px;
 	}
-	.table-conbox{
-		border: solid 1px #ddd;
-		border-radius: 3px;
-		.table{
-			margin-bottom: 0;
-			font-size: 12px;
+}
+.table-conbox{
+	border: solid 1px #ddd;
+	border-radius: 3px;
+	.table{
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+	.table-label{
+		padding-right: 0;
+		vertical-align: middle;
+		margin-top: 7px;
+	}
+	td,th{
+		text-align: center;
+		vertical-align: middle;
+		&.align-left,.align-left{
+			text-align: left;
 		}
-		.table-label{
-			padding-right: 0;
-			vertical-align: middle;
-			margin-top: 7px;
-		}
-		td,th{
-			text-align: center;
-			vertical-align: middle;
-			&.align-left,.align-left{
-				text-align: left;
-			}
-			&.align-right,.align-right{
-				text-align: right;
-			}
-			a{
-				color: @theme-color;
-			}
-			.small-input{
-				margin-top: 2px;
-			}
-		}
-		.sub-table{
-			td{
-				padding: 6px 0;
-			}
-		}
-		.table-total-mount{
-			border-top: solid 2px #666;
-			padding:12px 20px;
-			font-size: 13px;
+		&.align-right,.align-right{
 			text-align: right;
-			a{
-				color: @theme-color;
-				text-decoration: underline;
-				cursor: pointer;
-				&:hover{
-					color: @theme-color-hover;
+		}
+		a{
+			color: @theme-color;
+		}
+		.small-input{
+			margin-top: 2px;
+		}
+	}
+	.sub-table{
+		td{
+			padding: 6px 0;
+		}
+	}
+	.table-total-mount{
+		border-top: solid 2px #666;
+		padding:12px 20px;
+		font-size: 13px;
+		text-align: right;
+		a{
+			color: @theme-color;
+			text-decoration: underline;
+			cursor: pointer;
+			&:hover{
+				color: @theme-color-hover;
+			}
+		}
+		.totalmore{
+			margin-top:12px;
+			font-size: 16px;
+			color: @theme-color;
+			font-weight: bold;
+		}
+	}
+	.formlist{
+		margin-left: 42px;
+		padding-top: 10px;
+		font-size: 12px;
+		border-top: 1px solid #ccc;
+		&:first-child{
+			border-top: none;
+		}
+		input[type='radio']{
+			margin-top: 2px;
+		}
+		.operation{
+			position: relative;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 16px;
+			padding-top: 7px;
+			vertical-align: middle;
+			display: inline-block;
+			li{
+				display: inline-block;
+				margin: 0 6px;
+				a{
+					color: @theme-color;
+					&:hover{
+						color: @theme-color-hover;
+					}
 				}
 			}
-			.totalmore{
-				margin-top:12px;
-				font-size: 16px;
-				color: @theme-color;
-				font-weight: bold;
-			}
 		}
-		.formlist{
-			margin-left: 42px;
-			padding-top: 10px;
-			font-size: 12px;
-			border-top: 1px solid #ccc;
-			&:first-child{
-				border-top: none;
+		.sublist{
+			margin: 24px 0;
+			.form-group-margin{
+				margin-bottom: 6px;
 			}
-			input[type='radio']{
-				margin-top: 2px;
+			.add-btn{
+				margin-left: 32px;
 			}
 			.operation{
-				position: relative;
-				margin-top: 0;
-				margin-bottom: 0;
-				margin-left: 16px;
-				padding-top: 7px;
-				vertical-align: middle;
+				display: none;
+			}
+			.hover-show{
+				margin-left: 15px;
 				display: inline-block;
-				li{
-					display: inline-block;
-					margin: 0 6px;
-					a{
-						color: @theme-color;
-						&:hover{
-							color: @theme-color-hover;
-						}
+				&:hover{
+					.operation{
+						display: inline-block;
 					}
 				}
 			}
-			.sublist{
-				margin: 24px 0;
-				.form-group-margin{
-					margin-bottom: 6px;
-				}
-				.add-btn{
-					margin-left: 32px;
-				}
-				.operation{
-					display: none;
-				}
-				.hover-show{
-					margin-left: 15px;
-					display: inline-block;
-					&:hover{
-						.operation{
-							display: inline-block;
-						}
-					}
-				}
-			}
-			.spe-sublist{
-				margin-left: 42px;
-				padding-left: 12px;
-				position: relative;
-			}
-			.spe-sublist:before{
-				content: "";
-				width:2px;
-				height: 24px;
-				display: block;
-				background-color: red;
-				position: absolute;
-				left: 0;
-				top: 8px;
-			}
-			.method-tit{
-				color: #555;
-				font-weight: bold;
-			}
+		}
+		.spe-sublist{
+			margin-left: 42px;
+			padding-left: 12px;
+			position: relative;
+		}
+		.spe-sublist:before{
+			content: "";
+			width:2px;
+			height: 24px;
+			display: block;
+			background-color: red;
+			position: absolute;
+			left: 0;
+			top: 8px;
+		}
+		.method-tit{
+			color: #555;
+			font-weight: bold;
 		}
 	}
-	.page-box{
-		padding:0 12px;
-		.page-con{
-			margin: 20px 0;
-			line-height: 36px;
-		}
+}
+.page-box{
+	padding:0 12px;
+	.page-con{
+		margin: 20px 0;
+		line-height: 36px;
 	}
-	.boxend{
-		margin-top: 12px;
-	}
+}
+.boxend{
+	margin-top: 12px;
 }
 .label-line-self{
 	.checkbox-inline, .radio-inline{

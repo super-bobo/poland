@@ -34,80 +34,80 @@
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-.content-right .table-conbox {
+.table-conbox {
   border: solid 1px #ddd;
   border-radius: 3px;
 }
-.content-right .table-conbox .table {
+.table-conbox .table {
   margin-bottom: 0;
   font-size: 12px;
 }
-.content-right .table-conbox .table-label {
+.table-conbox .table-label {
   padding-right: 0;
   vertical-align: middle;
   margin-top: 7px;
 }
-.content-right .table-conbox td,
-.content-right .table-conbox th {
+.table-conbox td,
+.table-conbox th {
   text-align: center;
   vertical-align: middle;
 }
-.content-right .table-conbox td.align-left,
-.content-right .table-conbox th.align-left,
-.content-right .table-conbox td .align-left,
-.content-right .table-conbox th .align-left {
+.table-conbox td.align-left,
+.table-conbox th.align-left,
+.table-conbox td .align-left,
+.table-conbox th .align-left {
   text-align: left;
 }
-.content-right .table-conbox td.align-right,
-.content-right .table-conbox th.align-right,
-.content-right .table-conbox td .align-right,
-.content-right .table-conbox th .align-right {
+.table-conbox td.align-right,
+.table-conbox th.align-right,
+.table-conbox td .align-right,
+.table-conbox th .align-right {
   text-align: right;
 }
-.content-right .table-conbox td a,
-.content-right .table-conbox th a {
+.table-conbox td a,
+.table-conbox th a {
   color: #d1281b;
 }
-.content-right .table-conbox td .small-input,
-.content-right .table-conbox th .small-input {
+.table-conbox td .small-input,
+.table-conbox th .small-input {
   margin-top: 2px;
 }
-.content-right .table-conbox .sub-table td {
+.table-conbox .sub-table td {
   padding: 6px 0;
 }
-.content-right .table-conbox .table-total-mount {
+.table-conbox .table-total-mount {
   border-top: solid 2px #666;
   padding: 12px 20px;
   font-size: 13px;
   text-align: right;
 }
-.content-right .table-conbox .table-total-mount a {
+.table-conbox .table-total-mount a {
   color: #d1281b;
   text-decoration: underline;
   cursor: pointer;
 }
-.content-right .table-conbox .table-total-mount a:hover {
+.table-conbox .table-total-mount a:hover {
   color: #ba1f1f;
 }
-.content-right .table-conbox .table-total-mount .totalmore {
+.table-conbox .table-total-mount .totalmore {
   margin-top: 12px;
   font-size: 16px;
   color: #d1281b;
   font-weight: bold;
 }
-.content-right .table-conbox .formlist {
+.table-conbox .formlist {
   margin-left: 42px;
   padding-top: 10px;
   font-size: 12px;
   border-top: 1px solid #ccc;
 }
-.content-right .table-conbox .formlist:first-child {
+.table-conbox .formlist:first-child {
   border-top: none;
 }
-.content-right .table-conbox .formlist input[type='radio'] {
+.table-conbox .formlist input[type='radio'] {
   margin-top: 2px;
 }
-.content-right .table-conbox .formlist .operation {
+.table-conbox .formlist .operation {
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
@@ -116,41 +116,41 @@
   vertical-align: middle;
   display: inline-block;
 }
-.content-right .table-conbox .formlist .operation li {
+.table-conbox .formlist .operation li {
   display: inline-block;
   margin: 0 6px;
 }
-.content-right .table-conbox .formlist .operation li a {
+.table-conbox .formlist .operation li a {
   color: #d1281b;
 }
-.content-right .table-conbox .formlist .operation li a:hover {
+.table-conbox .formlist .operation li a:hover {
   color: #ba1f1f;
 }
-.content-right .table-conbox .formlist .sublist {
+.table-conbox .formlist .sublist {
   margin: 24px 0;
 }
-.content-right .table-conbox .formlist .sublist .form-group-margin {
+.table-conbox .formlist .sublist .form-group-margin {
   margin-bottom: 6px;
 }
-.content-right .table-conbox .formlist .sublist .add-btn {
+.table-conbox .formlist .sublist .add-btn {
   margin-left: 32px;
 }
-.content-right .table-conbox .formlist .sublist .operation {
+.table-conbox .formlist .sublist .operation {
   display: none;
 }
-.content-right .table-conbox .formlist .sublist .hover-show {
+.table-conbox .formlist .sublist .hover-show {
   margin-left: 15px;
   display: inline-block;
 }
-.content-right .table-conbox .formlist .sublist .hover-show:hover .operation {
+.table-conbox .formlist .sublist .hover-show:hover .operation {
   display: inline-block;
 }
-.content-right .table-conbox .formlist .spe-sublist {
+.table-conbox .formlist .spe-sublist {
   margin-left: 42px;
   padding-left: 12px;
   position: relative;
 }
-.content-right .table-conbox .formlist .spe-sublist:before {
+.table-conbox .formlist .spe-sublist:before {
   content: "";
   width: 2px;
   height: 24px;
@@ -160,18 +160,18 @@
   left: 0;
   top: 8px;
 }
-.content-right .table-conbox .formlist .method-tit {
+.table-conbox .formlist .method-tit {
   color: #555;
   font-weight: bold;
 }
-.content-right .page-box {
+.page-box {
   padding: 0 12px;
 }
-.content-right .page-box .page-con {
+.page-box .page-con {
   margin: 20px 0;
   line-height: 36px;
 }
-.content-right .boxend {
+.boxend {
   margin-top: 12px;
 }
 .label-line-self .checkbox-inline,

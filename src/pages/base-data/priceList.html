@@ -1,4 +1,4 @@
-md<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -109,72 +109,50 @@ md<!DOCTYPE html>
 				<div class="container-fluid">
 					<ol class="breadcrumb breadcrumb-self">
 						<li><a href="#">Base Data</a></li>
-						<li class="active">Customer</li>
+						<li class="active">Product catalog</li>
 					</ol>
 					<section class="con-part">
 						<div class="con-title clearfix">
-							<h4 class="fl">Customer List</h4>
 							<div class="add-btn fr">
-								<a href="#" class="btn btn-primary input-sm btn-primary-self">Add</a>
+								<button href="#" class="btn btn-primary input-sm btn-primary-self" data-toggle="modal" data-target="#addNewData">Add New Price List</button>
 							</div>
 						</div>
-						<div class="searchbar">
-							<form class="form-horizontal">
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Customer Name</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" placeholder="Customer Name">
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<button class="btn btn-primary btn-primary-self">Search</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</section>
-					<section class="con-part">
 						<div class="table-conbox table-responsive">
 							<table class="table table-striped table-hover check-all-sub">
 								<thead>
 									<tr>
-										<th>Details</th>
-										<th>Name</th>
-										<th>ID.</th>
-										<th>Status</th>                    
-										<th>Language</th>
-										<th>Country</th>
-										<th>Sales Region</th>
+										<th></th>
+										<th>Price List Name</th>
+										<th>Currency</th>
+										<th>Effective Date</th>                    
+										<th>Disable Date</th>
+										<th>Remark</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><a >Details</a></td>
-										<td>ABC Inc.</td>
-										<td>1-HEHBS</td>
-										<td>Active</td>
-										<td>PL</td>     
-										<td>Poland</td>     
-										<td>CEE</td>     
+										<td><a >Updata</a> | <a >Details</a></td>
+										<td>Generic MSRP List</td>
+										<td>USD</td>
+										<td>17/3/2017</td>
+										<td>17/3/2017</td>     
+										<td>remark</td>
 									</tr>
 									<tr>
-										<td><a >Details</a></td>
-										<td>ABC Inc.</td>
-										<td>1-HEHBS</td>
-										<td>Active</td>
-										<td>PL</td>     
-										<td>Poland</td>     
-										<td>CEE</td>     
+										<td><a >Updata</a> | <a >Details</a></td>
+										<td>Generic MSRP List</td>
+										<td>USD</td>
+										<td>17/3/2017</td>
+										<td>17/3/2017</td>     
+										<td>remark</td>
 									</tr>
 									<tr>
-										<td><a >Details</a></td>
-										<td>ABC Inc.</td>
-										<td>1-HEHBS</td>
-										<td>Active</td>
-										<td>PL</td>     
-										<td>Poland</td>     
-										<td>CEE</td>     
+										<td><a >Updata</a> | <a >Details</a></td>
+										<td>Generic MSRP List</td>
+										<td>USD</td>
+										<td>17/3/2017</td>
+										<td>17/3/2017</td>     
+										<td>remark</td>
 									</tr>
 								</tbody>
 							</table>
@@ -228,6 +206,71 @@ md<!DOCTYPE html>
 			</section>
 		</div>
 	</footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="addNewData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add New Price List</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="form-horizontal" style="margin-top: 10px;">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="col-md-4 control-label font-normal">Price List Name</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="col-md-4 control-label font-normal">Currency Code</label>
+						<div class="col-md-6">
+							<select class="form-control">
+								<option>USD</option>
+								<option>EUR</option>
+								<option>PLN</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="col-md-4 control-label font-normal">Effective Date</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="" class="col-md-4 control-label font-normal">Disable Date</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="" class="col-md-2 control-label font-normal">Remark</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-primary-self">Submit</button>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="../../source/plugins/lib/jquery-1.12.4.min.js"></script>
 <script src="../../source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
