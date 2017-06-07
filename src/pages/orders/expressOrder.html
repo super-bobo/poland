@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<title>Express order</title>
+	<link href="../../source/plugins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../source/css/common.css" rel="stylesheet">
+	<link href="../../source/css/base-right.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="../../source/plugins/lib/js/html5.min.js"></script>
+	<script src="../../source/plugins/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="header">
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10">
+					<div class="logo">
+						<a href="http://www.dahuasecurity.com/en/us/" title="dahua security">
+							<img src="../../source/images/LOGO.png" alt="dahua logo">
+						</a>
+					</div>
+
+
+					<div class="contact-info">
+						<strong class="welcome-text">Welcome to Dahua!</strong>
+						<span>wanghongbo</span>(<span>50426</span>)
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="fr">
+						<a href="#" class="btn btn-default btn-default-self">sign out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<div class="nav">
+	<nav class="navbar navbar-default navbar-default-self">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		
+		
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expanded="false">
+							Home
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Orders <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Express Order</a></li>
+							<li><a href="#">Pending Order</a></li>
+							<li><a href="#">Approving Order</a></li>
+							<li><a href="#">Unconfirm Orders</a></li>
+							<li><a href="#">Order history</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Order history
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="ture" aria-expended="false">
+							Account <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Account Information</a></li>
+							<li><a href="#">Change Password</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<div class="content-box container-fluid">
+	<div class="row">
+		<aside class="col-lg-2 col-md-3 visible-lg visible-md">
+			<div class="sidebar">
+				<h5>Base settings</h5>
+				<ul>
+					<li><a class="active" href="#"><span class="glyphicon glyphicon-triangle-right"></span>Customer</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Menu role</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-triangle-right"></span>Ceche management</a></li>
+				</ul>
+			</div>
+		</aside>
+		<section class="col-lg-10 col-md-9">
+			<div class="content-right">
+				<div class="container-fluid">
+					<ol class="breadcrumb breadcrumb-self">
+						<li><a href="#">Orders</a></li>
+						<li class="active">Express Order</li>
+					</ol>
+					<section class="con-part">
+						<div class="con-tit clearfix">
+							<h4 class="fl">General Information</h4>
+							<div class="add-btn fr">
+								<a href="#" class="btn btn-primary btn-primary-self">Save</a>&nbsp;&nbsp;
+								<a href="#" class="btn btn-primary btn-primary-self">Submit</a>
+							</div>
+						</div>
+						<div class="searchbar">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<h4 class="col-sm-3 control-label">Order Number</h4>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">*Customer</label>
+									<div class="col-sm-5">
+										<select class="form-control">
+											<option value="">Honeywell International Inc.</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Credit term</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" placeholder="Credit term" readonly>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Order From</label>
+									<div class="col-sm-5">
+										<select class="form-control">
+											<option value="">Dahua Technology USA Inc</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">* PO Number</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" placeholder="PO Number">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Placed by</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" value="wagnhongbo" readonly>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-9">
+										<button class="btn btn-primary btn-primary-self">Search</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</section>
+					<section class="con-part">
+						<div class="con-tit clearfix">
+							<h4>Please enter Model # and Qty</h4>
+						</div>
+						<div class="table-conbox table-responsive">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Model #</th>
+										<th>Qty</th>
+										<th>Percent&nbsp;<b style="color:red">↓</b></th>
+										<th>Preferential&nbsp;<b style="color:red">↓</b></th>
+										<th>Unit Price</th>
+										<th>Total Price</th>
+										<th>Inventory</th>
+										<th>Remark</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><button type="button" class="close close-btn" aria-label="close"><span aria-hidden="true">&times;</span></button></td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Search for...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Qty">
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<span class="input-group-addon">%</span>
+											</div>
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Preferential" readonly>
+												<span class="input-group-addon">$</span>
+											</div>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Remark">
+										</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="close close-btn" aria-label="close"><span aria-hidden="true">&times;</span></button></td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Search for...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Qty">
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<span class="input-group-addon">%</span>
+											</div>
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Preferential" readonly>
+												<span class="input-group-addon">$</span>
+											</div>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Remark">
+										</td>
+									</tr>
+									<tr>
+										<td><button type="button" class="close close-btn" aria-label="close"><span aria-hidden="true">&times;</span></button></td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Search for...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Qty">
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<span class="input-group-addon">%</span>
+											</div>
+										</td>
+										<td>
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control" placeholder="Preferential" readonly>
+												<span class="input-group-addon">$</span>
+											</div>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="Remark">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="table-total-mount clearfix">
+								<div class="fl"><a>Clear All</a></div>
+								<div class="fr">
+									<a>Show More Lines</a>
+									<div class="totalmore">Total Amount: $0</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="con-part">
+						<div class="con-tit clearfix">
+							<h4>Shipping Method</h4>
+						</div>
+						<form class="form-horizontal">
+							<div class="table-conbox">
+								<div class="formlist">
+									<div class="sublist">
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10 method-tit">* Please select a shipping method
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10">
+												<label class="radio-inline">
+													<input type="radio" name="method"> Free Shipping
+												</label>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10">
+												<label class="radio-inline">
+													<input type="radio" name="method"> Customer's Shipping Account
+												</label>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10">
+												<label class="radio-inline">
+													<input type="radio" name="method"> Pre-paid
+												</label>
+											</div>
+										</div>
+									</div>
+									
+									<div class="sublist spe-sublist">
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10 method-tit">*Please Select an address
+												<button class="btn btn-primary btn-primary-self add-btn">Add Address</button>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="address"> Free Shipping
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="address"> Customer's Shipping Account
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="address"> Pre-paid
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group" style="margin-top: 16px;">
+											<label for="" class="col-sm-2 control-label method-tit">Shipping Carrier</label>
+											<div class="col-sm-3">
+												<select class="form-control">
+													<option value="1">UPS</option>
+													<option value="2">FedEx</option>
+													<option value="18">Others</option>
+													<option value="21">FedEx Freight</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="col-sm-2 control-label method-tit">Shipping Service</label>
+											<div class="col-sm-3">
+												<select class="form-control">
+													<option value="1">UPS</option>
+													<option value="2">FedEx</option>
+													<option value="18">Others</option>
+													<option value="21">FedEx Freight</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="sublist spe-sublist">
+										<div class="form-group form-group-margin">
+											<div class="col-sm-10 method-tit">*Please Select a Shipping Account
+												<button class="btn btn-primary btn-primary-self add-btn">Add Account</button>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="account"> Pre-paid
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="account"> Pre-paid
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group form-group-margin">
+											<div class="hover-show clearfix">
+												<label class="radio-inline">
+													<input type="radio" name="account"> Pre-paid
+												</label>
+												<ul class="operation">
+													<li><a href="#">Delect</a></li>
+													<li><a href="#">Edit</a></li>
+													<li><a href="#">Default</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="formlist">
+									<div class="form-group">
+										<div class="col-sm-10">
+											<label class="radio-inline">
+												<input type="radio" name=""> Will Call：
+												<strong>23 Hubble，Irvine, CA 92618</strong>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="formlist">
+									<div class="form-group">
+										<div class="col-sm-10">
+											<label class="radio-inline">
+												Bill To：1199 road 21212, Apo, AP, 09014, CA
+											</label>
+											<ul class="operation">
+												<li><a href="#">Edit</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="formlist">
+									<div class="form-group">
+										<div class="col-sm-1">
+											<label for="" class="col-sm-3 control-label">Remark</label>
+										</div>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder="remark">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="con-tit boxend clearfix">
+								<div class="add-btn fr">
+									<a href="#" class="btn btn-primary input-sm btn-primary-self">Save</a>&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary input-sm btn-primary-self">Submit</a>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<div class="footer">
+	<footer>
+		<div class="copyright">
+			<section>
+				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Dahua Technology USA Inc. 23 Hubble, Irvine, CA 92618, USA
+			</section>
+			<section>
+				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Tel:  (949) 679-7777
+			</section>
+		</div>
+	</footer>
+</div>
+<script src="../../source/plugins/lib/jquery-1.12.4.min.js"></script>
+<script src="../../source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../source/plugins/layer/layer.js"></script>
+<script src="../../source/plugins/lib/jquery-placeholder.min.js"></script>
+<script>
+	$(function(){
+		$("input,textarea").placeholder();
+	})
+</script>
+</body>
+</html>
