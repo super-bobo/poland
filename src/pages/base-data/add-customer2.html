@@ -165,51 +165,10 @@
 <script src="../../source/plugins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../source/plugins/layer/layer.js"></script>
 <script src="../../source/plugins/lib/jquery-placeholder.min.js"></script>
+<script src="../../source/js/addcustomer.js"></script>
 <script>
 	$(function(){
 		$("input,textarea").placeholder();
-		var tabWrapper = $('#add-customer');
-		var tabs = tabWrapper.find('ul li');
-
-		//get selected tab
-		function getSelectedTabIndex() {
-			var currentTab = 0;
-			$.each(tabs, function(index, val) {
-				 if($(this).hasClass('active')){
-				 	currentTab = index;
-				 	return;
-				 }
-			});
-			return currentTab;
-		}
-
-		//get tab contents
-		beginTab = $("#add-customer ul li:eq(" + getSelectedTabIndex() + ")").find("a");
-
-		loadTabFrame($(beginTab).attr("href"),$(beginTab).attr("rel"));
-
-		tabWrapper.find("a.customer-con").click(function() {
-			loadTabFrame($(this).attr("href"),$(this).attr("rel"));
-		});
-
-		//tab switching function
-		function loadTabFrame(tab, url) {
-			if ($(tab).find("iframe").length == 0) {
-				var html = [];
-				html.push('<div class="tabIframeWrapper">');
-				html.push('<iframe class="iframetab" src="' + url + '" width="100%" frameborder="0">Load Failed?</iframe>');
-				html.push('</div>');
-				$(tab).append(html.join(""));
-				var loadHeight = setInterval(function(){
-					var loaded = $(tab).find("iframe").window.loaded();
-					if(loaded){
-						clearInterval(loadHeight)
-					}
-				}, 1000)
-				$(tab).find("iframe").height($(window).height()-325);
-			}
-			return false;
-		}
 	})
 </script>
 </body>
