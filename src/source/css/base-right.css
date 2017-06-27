@@ -49,7 +49,7 @@
 }
 .table-conbox td,
 .table-conbox th {
-  vertical-align: middle;
+  vertical-align: middle!important;
 }
 .table-conbox td.align-left,
 .table-conbox th.align-left,
@@ -177,6 +177,12 @@
 .label-line-self .radio-inline {
   margin-left: 0;
   margin-right: 10px;
+}
+.express-total label {
+  color: #d1281b;
+}
+.express-total input {
+  width: 80px!important;
 }
 .menu-maintenance .ztreeBox {
   display: inline-block;

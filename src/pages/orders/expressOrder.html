@@ -115,49 +115,80 @@
 						<div class="con-tit clearfix">
 							<h4 class="fl">General Information</h4>
 							<div class="add-btn fr">
-								<a href="#" class="btn btn-primary btn-primary-self">Save</a>&nbsp;&nbsp;
-								<a href="#" class="btn btn-primary btn-primary-self">Submit</a>
+								<button class="btn btn-primary btn-primary-self">Save</button>&nbsp;&nbsp;
+								<button class="btn btn-primary btn-primary-self">Submit</button>
 							</div>
 						</div>
 						<div class="searchbar">
 							<form class="form-horizontal">
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">*Customer</label>
-									<div class="col-sm-5">
-										<select class="form-control">
-											<option value="">Honeywell International Inc.</option>
-										</select>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">*Customer</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="Customer">
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Credit term</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" placeholder="Credit term" readonly>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">*PO Number</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="PO Number">
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Order From</label>
-									<div class="col-sm-5">
-										<select class="form-control">
-											<option value="">Dahua Technology USA Inc</option>
-										</select>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Order Number</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="PO Number" value="1111" readonly>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">* PO Number</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" placeholder="PO Number">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Payment Term</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="Payment Term" value="60">
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Placed by</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" value="wagnhongbo" readonly>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Currency Code</label>
+											<div class="col-md-7">
+												<select class="form-control">
+													<option>120NET</option>
+													<option>30NET</option>
+												</select>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-3 col-sm-9">
-										<button class="btn btn-primary btn-primary-self">Search</button>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Remark</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="Remark">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Created By</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="PO Number" value="lili" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Created Date</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" placeholder="PO Number" value="2017-6-26 9:39:40" readonly>
+											</div>
+										</div>
 									</div>
 								</div>
 							</form>
@@ -168,18 +199,17 @@
 							<h4>Please enter Model # and Qty</h4>
 						</div>
 						<div class="table-conbox table-responsive">
-							<table class="table table-striped table-hover">
+							<table class="table table-striped table-hover" valign="middle">
 								<thead>
 									<tr>
 										<th></th>
 										<th>Model #</th>
+										<th>Required Date</th>
 										<th>Qty</th>
-										<th>Percent&nbsp;<b style="color:red">↓</b></th>
-										<th>Preferential&nbsp;<b style="color:red">↓</b></th>
-										<th>Unit Price</th>
-										<th>Total Price</th>
-										<th>Inventory</th>
-										<th>Remark</th>
+										<th>MSRP</th>
+										<th>Discount</th>
+										<th>Net Price</th>
+										<th>Net  Amount</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -194,25 +224,26 @@
 											</div>
 										</td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Qty">
+											<input type="text" class="form-control input-sm" placeholder="" value="2017-06-20">
 										</td>
 										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="10">
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
+										</td>
+
+										<td>
 											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<input type="text" class="form-control" value="80" readonly>
 												<span class="input-group-addon">%</span>
 											</div>
 										</td>
 										<td>
-											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Preferential" readonly>
-												<span class="input-group-addon">$</span>
-											</div>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
 										</td>
-										<td></td>
-										<td></td>
-										<td></td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Remark">
+											<input type="text" class="form-control input-sm" value="200" readonly>
 										</td>
 									</tr>
 									<tr>
@@ -226,25 +257,26 @@
 											</div>
 										</td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Qty">
+											<input type="text" class="form-control input-sm" placeholder="" value="2017-06-20">
 										</td>
 										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="10">
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
+										</td>
+
+										<td>
 											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<input type="text" class="form-control" value="80" readonly>
 												<span class="input-group-addon">%</span>
 											</div>
 										</td>
 										<td>
-											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Preferential" readonly>
-												<span class="input-group-addon">$</span>
-											</div>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
 										</td>
-										<td></td>
-										<td></td>
-										<td></td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Remark">
+											<input type="text" class="form-control input-sm" value="200" readonly>
 										</td>
 									</tr>
 									<tr>
@@ -258,222 +290,164 @@
 											</div>
 										</td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Qty">
+											<input type="text" class="form-control input-sm" placeholder="" value="2017-06-20">
 										</td>
 										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="10">
+										</td>
+										<td>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
+										</td>
+
+										<td>
 											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Percent" readonly>
+												<input type="text" class="form-control" value="80" readonly>
 												<span class="input-group-addon">%</span>
 											</div>
 										</td>
 										<td>
-											<div class="input-group input-group-sm">
-												<input type="text" class="form-control" placeholder="Preferential" readonly>
-												<span class="input-group-addon">$</span>
-											</div>
+											<input type="text" class="form-control input-sm" placeholder="" value="100" readonly>
 										</td>
-										<td></td>
-										<td></td>
-										<td></td>
 										<td>
-											<input type="text" class="form-control input-sm" placeholder="Remark">
+											<input type="text" class="form-control input-sm" value="200" readonly>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 							<div class="table-total-mount clearfix">
-								<div class="fl"><a>Clear All</a></div>
-								<div class="fr">
-									<a>Show More Lines</a>
-									<div class="totalmore">Total Amount: $0</div>
+								<div class="fl">
+									<button class="btn btn-primary btn-primary-self">Add Line</button>
+								</div>
+								<div class="fr express-total">
+									<div class="form-inline">
+										<div class="form-group">
+											<label class="font-normal">Net Amount</label>
+											<input type="Number" class="form-control" value="100">
+										</div>
+										<div class="form-group">
+											<label class="font-normal">Tax Amount</label>
+											<input type="Number" class="form-control" value="200">
+										</div>
+									</div>
+									<div class="form-inline" style="margin-top: 15px;">
+										<div class="form-group">
+										    <label>Total  Amount</label>
+										    <input type="text" class="form-control" value="300" readonly>
+										  </div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</section>
 					<section class="con-part">
 						<div class="con-tit clearfix">
-							<h4>Shipping Method</h4>
+							<h4>Shipping Information</h4>
 						</div>
-						<form class="form-horizontal">
-							<div class="table-conbox">
-								<div class="formlist">
-									<div class="sublist">
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10 method-tit">* Please select a shipping method
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10">
-												<label class="radio-inline">
-													<input type="radio" name="method"> Free Shipping
-												</label>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10">
-												<label class="radio-inline">
-													<input type="radio" name="method"> Customer's Shipping Account
-												</label>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10">
-												<label class="radio-inline">
-													<input type="radio" name="method"> Pre-paid
-												</label>
-											</div>
-										</div>
-									</div>
-									
-									<div class="sublist spe-sublist">
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10 method-tit">*Please Select an address
-												<button class="btn btn-primary btn-primary-self add-btn">Add Address</button>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="address"> Free Shipping
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="address"> Customer's Shipping Account
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="address"> Pre-paid
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="form-group" style="margin-top: 16px;">
-											<label for="" class="col-sm-2 control-label method-tit">Shipping Carrier</label>
-											<div class="col-sm-3">
-												<select class="form-control">
-													<option value="1">UPS</option>
-													<option value="2">FedEx</option>
-													<option value="18">Others</option>
-													<option value="21">FedEx Freight</option>
-												</select>
-											</div>
-										</div>
+						<div class="searchbar">
+							<div class="form-horizontal">
+								<div class="row">
+									<div class="col-md-6">
 										<div class="form-group">
-											<label for="" class="col-sm-2 control-label method-tit">Shipping Service</label>
-											<div class="col-sm-3">
+											<label for="" class="col-md-5 control-label font-normal">Shipping Method</label>
+											<div class="col-md-7">
 												<select class="form-control">
-													<option value="1">UPS</option>
-													<option value="2">FedEx</option>
-													<option value="18">Others</option>
-													<option value="21">FedEx Freight</option>
+													<option>120NET</option>
+													<option>30NET</option>
 												</select>
 											</div>
 										</div>
 									</div>
-									<div class="sublist spe-sublist">
-										<div class="form-group form-group-margin">
-											<div class="col-sm-10 method-tit">*Please Select a Shipping Account
-												<button class="btn btn-primary btn-primary-self add-btn">Add Account</button>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="account"> Pre-paid
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="account"> Pre-paid
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="form-group form-group-margin">
-											<div class="hover-show clearfix">
-												<label class="radio-inline">
-													<input type="radio" name="account"> Pre-paid
-												</label>
-												<ul class="operation">
-													<li><a href="#">Delect</a></li>
-													<li><a href="#">Edit</a></li>
-													<li><a href="#">Default</a></li>
-												</ul>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Carrier Name</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" value="Carrier Name" readonly>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="formlist">
-									<div class="form-group">
-										<div class="col-sm-10">
-											<label class="radio-inline">
-												<input type="radio" name=""> Will Call：
-												<strong>23 Hubble，Irvine, CA 92618</strong>
-											</label>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Service Levlel</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" value="Service Levlel" readonly>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="formlist">
-									<div class="form-group">
-										<div class="col-sm-10">
-											<label class="radio-inline">
-												Bill To：1199 road 21212, Apo, AP, 09014, CA
-											</label>
-											<ul class="operation">
-												<li><a href="#">Edit</a></li>
-											</ul>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Transporation Mode</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" value="Transporation Mode" readonly>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="formlist">
-									<div class="form-group">
-										<div class="col-sm-1">
-											<label for="" class="col-sm-3 control-label">Remark</label>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Transportation Fee</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" value="Transporation Mode">
+											</div>
 										</div>
-										<div class="col-sm-6">
-											<input type="text" class="form-control" placeholder="remark">
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="" class="col-md-5 control-label font-normal">Shipping Instruction</label>
+											<div class="col-md-7">
+												<input type="text" class="form-control" value="Transporation Mode">
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="con-tit boxend clearfix">
-								<div class="add-btn fr">
-									<a href="#" class="btn btn-primary input-sm btn-primary-self">Save</a>&nbsp;&nbsp;
-									<a href="#" class="btn btn-primary input-sm btn-primary-self">Submit</a>
+						</div>
+					</section>
+					<section class="con-part">
+						<div class="con-tit clearfix">
+							<h4>Address</h4>
+						</div>
+						<div class="searchbar">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 control-label font-normal">Bill To Address</label>
+									<div class="col-sm-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Bill To Address" value="Prilaz Ivana Visina 7, 10020 Zagreb, Croatia,17621, +67361626393">
+											<span class="input-group-btn">
+												<button class="btn btn-default" type="button">
+													<span class="glyphicon glyphicon-search"></span>
+												</button>
+												<button class="btn btn-default" type="button">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label font-normal">ShipTo Address</label>
+									<div class="col-sm-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Bill To Address" value="Prilaz Ivana Visina 7, 10020 Zagreb, Croatia,17621, +67361626393">
+											<span class="input-group-btn">
+												<button class="btn btn-default" type="button">
+													<span class="glyphicon glyphicon-search"></span>
+												</button>
+												<button class="btn btn-default" type="button">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
+											</span>
+										</div>
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
+						<div class="con-tit boxend clearfix">
+							<div class="add-btn fr">
+								<button class="btn btn-primary btn-primary-self">Save</button>&nbsp;&nbsp;
+								<button class="btn btn-primary btn-primary-self">Submit</button>
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>
