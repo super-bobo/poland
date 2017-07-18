@@ -1,0 +1,36 @@
+/*home start*/
+.home-content {
+  margin: 20px 0 10px;
+}
+.home-content-center {
+  border-left: solid 1px #eee;
+  border-right: solid 1px #eee;
+  padding: 0 36px;
+}
+.home-content-center .home-table {
+  margin-bottom: 10px;
+}
+.home-content-center .home-table-title {
+  font-size: 16px;
+  margin-top: 0;
+}
+.home-content-right .home-followus li {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.home-content-right .home-followus li img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .home-content-center {
+    padding: 0 15px;
+  }
+  .home-content-right .home-followus {
+    text-align: center;
+  }
+  .home-content-right .home-followus li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+/*home end*/
