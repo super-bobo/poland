@@ -1,26 +1,28 @@
 body {
   background-color: #f8f8f8;
 }
-.error-404-wrap {
-  position: relative;
+.error-wrap {
   height: 377px;
 }
-.error-404-wrap .ico-404 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -160px 0 0 -217px;
+.error-wrap .icon-img {
+  margin: 60px auto;
   width: 435px;
   height: 279px;
+  position: relative;
+}
+.error-wrap .ico-404 {
   background: url(../images/dahua-bg404.png) no-repeat;
 }
-.error-404-wrap a.a-link {
+.error-wrap .ico-500 {
+  background: url(../images/dahua-bg500.png) no-repeat;
+}
+.error-wrap a.a-link {
   position: absolute;
-  top: 205px;
+  top: 208px;
   left: 50px;
   color: #68544c;
   text-decoration: none;
 }
-.error-404-wrap a.a-link:hover {
+.error-wrap a.a-link:hover {
   text-decoration: underline;
 }
