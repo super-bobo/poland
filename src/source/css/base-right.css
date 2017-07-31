@@ -86,7 +86,7 @@
   cursor: pointer;
 }
 .table-conbox .table-total-mount a:hover {
-  color: #ba1f1f;
+  color: #b22217;
 }
 .table-conbox .table-total-mount .totalmore {
   margin-top: 12px;
@@ -123,7 +123,7 @@
   color: #d1281b;
 }
 .table-conbox .formlist .operation li a:hover {
-  color: #ba1f1f;
+  color: #b22217;
 }
 .table-conbox .formlist .sublist {
   margin: 24px 0;

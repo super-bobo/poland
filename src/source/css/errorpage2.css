@@ -1,0 +1,156 @@
+body {
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.font-normal {
+  font-weight: normal;
+}
+body {
+  background-color: #f2f2f2;
+  color: #444;
+  font: 12px/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-image: url(../images/blueprint.png);
+  margin: 0;
+  padding: 0;
+}
+.poland-wrapper,
+.poland-wrapper.fluid {
+  width: 100%;
+}
+.poland-wrapper {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  min-width: 320px;
+}
+.poland-content {
+  clear: both;
+  padding-bottom: 58px;
+}
+.poland-wrapper .poland-container,
+.poland-wrapper.fluid .poland-container {
+  width: 96%;
+  margin: auto;
+}
+.poland-error-wrapper {
+  width: 320px;
+  padding: 30px 0;
+  margin: auto;
+  position: relative;
+}
+.poland-error-wrapper .poland-error-pin {
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: -27px;
+  z-index: 10;
+  position: relative;
+  background: url("../images/error-pin.png") no-repeat center center;
+}
+.poland-error-wrapper .poland-error-code {
+  width: 317px;
+  height: 297px;
+  padding: 127px 16px 0 16px;
+  position: relative;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 20px;
+  z-index: 5;
+  line-height: 1;
+  font-size: 32px;
+  text-align: center;
+  background: url("../images/error-hanger.png") no-repeat center center;
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation: error-swing infinite 2s ease-in-out alternate;
+  -moz-animation: error-swing infinite 2s ease-in-out alternate;
+  animation: error-swing infinite 2s ease-in-out alternate;
+}
+.poland-error-wrapper .poland-error-code span {
+  font-size: 96px;
+  display: block;
+}
+.poland-error-wrapper .poland-error-heading {
+  color: #d1281b;
+  text-align: center;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.poland-error-wrapper div {
+  text-align: center;
+  font-size: 14px;
+}
+.poland-footer {
+  background: #fff;
+  border-top: 1px solid #d0d0d0;
+  padding: 2px 0;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.poland-error-wrapper a {
+  margin: 5px;
+  color: #fff;
+  background: #d1281b;
+  text-decoration: none;
+  padding: 3px 8px;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.poland-error-wrapper a:hover {
+  background-color: #b22217;
+  text-decoration: underline;
+}
+/*footer start*/
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.footer .copyright {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+}
+/*footer end*/
+@-webkit-keyframes error-swing {
+  0% {
+    -webkit-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+  }
+}
+@-moz-keyframes error-swing {
+  0% {
+    -moz-transform: rotate(1deg);
+  }
+  100% {
+    -moz-transform: rotate(-2deg);
+  }
+}
+@keyframes error-swing {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
