@@ -37,7 +37,7 @@
   width: 160px;
 }
 .header {
-  line-height: 64px;
+  line-height: 60px;
 }
 .header .logo {
   float: left;
@@ -63,6 +63,7 @@
   background-color: #d1281b;
   border: none;
   border-radius: 0;
+  margin-bottom: 12px;
 }
 .nav .navbar-default-self .navbar-toggle {
   border-color: #fff;
